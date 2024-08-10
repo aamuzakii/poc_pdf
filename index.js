@@ -24,10 +24,11 @@ async function x() {
 
   // Draw a string of text diagonally across the first page
   firstPage.drawText("X", {
-    // 0 0  kiri bawah
+    // object nya 0 0  kiri bawah
+    // pdf nya 0 0  kiri bawah
     x: width / 2,
     y: height / 2,
-    size: 50,
+    size: 500,
     font: helveticaFont,
     color: rgb(0.95, 0.1, 0.1),
   });
