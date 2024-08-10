@@ -23,13 +23,13 @@ async function x() {
   const { width, height } = firstPage.getSize();
 
   // Draw a string of text diagonally across the first page
-  firstPage.drawText("This text was added with JavaScript!", {
-    x: 5,
-    y: height / 2 + 300,
+  firstPage.drawText("X", {
+    // 0 0  kiri bawah
+    x: width / 2,
+    y: height / 2,
     size: 50,
     font: helveticaFont,
     color: rgb(0.95, 0.1, 0.1),
-    rotate: degrees(-45),
   });
 
   // Serialize the PDFDocument to bytes (a Uint8Array)
